@@ -21,7 +21,7 @@
 
 界面效果图如下：
 
-![](../img/loginInterface.PNG)
+![](img/loginInterface.PNG)
 
 界面中分别对“注册”，“登录”，“取消”，“退出”按钮进行了事件函数绑定
 
@@ -49,7 +49,7 @@ string s = "server=localhost;user=yourusername;password=yourpassword;" +
 
 界面效果图如下：
 
-![](../img/userPage.PNG)
+![](img/userPage.PNG)
 
 用户可在该界面选择进入“学生信息管理”，“课程信息管理”，“选课成绩管理”页面，或者退出程序
 
@@ -57,7 +57,7 @@ string s = "server=localhost;user=yourusername;password=yourpassword;" +
 
 界面效果如下：
 
-![](../img/studentInfoPage.PNG)
+![](img/studentInfoPage.PNG)
 
 该界面中可以对学生信息进行添加，修改，删除和查找的操作
 
@@ -84,7 +84,7 @@ string s = "server=localhost;user=yourusername;password=yourpassword;" +
 
 界面效果如下：
 
-![](../img/courseInfoPage.PNG)
+![](img/courseInfoPage.PNG)
 
 课程信息管理界面可以对课程信息进行添加，修改，删除，查询的操作，操作逻辑与学生信息管理界面相同
 
@@ -107,7 +107,7 @@ string s = "server=localhost;user=yourusername;password=yourpassword;" +
 
 界面效果如下：
 
-![](../img/infoPage.PNG)
+![](img/infoPage.PNG)
 
 该界面提供学生的选课信息信息添加，修改，删除，查找的功能，同时也提供了简单的信息统计功能；其添加，修改，删除功能与学生管理页面设计原理类似，在此不做过多介绍
 
