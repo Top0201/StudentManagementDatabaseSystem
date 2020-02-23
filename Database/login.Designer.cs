@@ -47,49 +47,55 @@
             // 
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.Size = new System.Drawing.Size(267, 133);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.Size = new System.Drawing.Size(267, 133);
             this.panel2.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(799, 450);
+            this.panel3.Size = new System.Drawing.Size(1065, 600);
             this.panel3.TabIndex = 0;
             // 
             // username
             // 
-            this.username.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.username.Location = new System.Drawing.Point(303, 106);
+            this.username.Font = new System.Drawing.Font("SimSun", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.username.Location = new System.Drawing.Point(404, 141);
+            this.username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(210, 39);
+            this.username.Size = new System.Drawing.Size(279, 50);
             this.username.TabIndex = 2;
             // 
             // password
             // 
-            this.password.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.password.Location = new System.Drawing.Point(303, 178);
+            this.password.Font = new System.Drawing.Font("SimSun", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.password.Location = new System.Drawing.Point(404, 237);
+            this.password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(210, 39);
+            this.password.Size = new System.Drawing.Size(279, 50);
             this.password.TabIndex = 4;
             // 
             // yes
             // 
             this.yes.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.yes.Font = new System.Drawing.Font("宋体", 10.5F);
-            this.yes.Location = new System.Drawing.Point(338, 300);
+            this.yes.Font = new System.Drawing.Font("SimSun", 10.5F);
+            this.yes.Location = new System.Drawing.Point(451, 400);
+            this.yes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.yes.Name = "yes";
-            this.yes.Size = new System.Drawing.Size(147, 44);
+            this.yes.Size = new System.Drawing.Size(196, 59);
             this.yes.TabIndex = 5;
             this.yes.Text = "登录";
             this.yes.UseVisualStyleBackColor = false;
@@ -98,10 +104,11 @@
             // no
             // 
             this.no.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.no.Font = new System.Drawing.Font("宋体", 10.5F);
-            this.no.Location = new System.Drawing.Point(552, 300);
+            this.no.Font = new System.Drawing.Font("SimSun", 10.5F);
+            this.no.Location = new System.Drawing.Point(736, 400);
+            this.no.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.no.Name = "no";
-            this.no.Size = new System.Drawing.Size(143, 44);
+            this.no.Size = new System.Drawing.Size(191, 59);
             this.no.TabIndex = 6;
             this.no.Text = "取消";
             this.no.UseVisualStyleBackColor = false;
@@ -110,10 +117,11 @@
             // register
             // 
             this.register.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.register.Font = new System.Drawing.Font("宋体", 10.5F);
-            this.register.Location = new System.Drawing.Point(123, 298);
+            this.register.Font = new System.Drawing.Font("SimSun", 10.5F);
+            this.register.Location = new System.Drawing.Point(164, 397);
+            this.register.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(144, 44);
+            this.register.Size = new System.Drawing.Size(192, 59);
             this.register.TabIndex = 7;
             this.register.Text = "注册";
             this.register.UseVisualStyleBackColor = false;
@@ -122,9 +130,10 @@
             // exit
             // 
             this.exit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.exit.Location = new System.Drawing.Point(665, 404);
+            this.exit.Location = new System.Drawing.Point(887, 539);
+            this.exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(90, 34);
+            this.exit.Size = new System.Drawing.Size(120, 45);
             this.exit.TabIndex = 8;
             this.exit.Text = "退出";
             this.exit.UseVisualStyleBackColor = false;
@@ -133,29 +142,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(148, 106);
+            this.label1.Font = new System.Drawing.Font("SimSun", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(197, 141);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 28);
+            this.label1.Size = new System.Drawing.Size(131, 38);
             this.label1.TabIndex = 9;
             this.label1.Text = "用户名";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(150, 190);
+            this.label2.Font = new System.Drawing.Font("SimSun", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(200, 253);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 28);
+            this.label2.Size = new System.Drawing.Size(131, 38);
             this.label2.TabIndex = 10;
             this.label2.Text = "密  码";
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 600);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exit);
@@ -165,11 +176,12 @@
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "login";
             this.Text = "登录";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.login_FormClosed);
             this.Load += new System.EventHandler(this.login_Load);
-            this.ResizeEnd += new System.EventHandler(this.login_ResizeEnd);
+            this.SizeChanged += new System.EventHandler(this.login_ResizeEnd);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -15,11 +15,11 @@ namespace Database
     {
         MySqlConnection con;
         user_page page;
-        AutoSizeForm auto;
+        AutoSizeForm auto= new AutoSizeForm();
         public student_info(MySqlConnection con)
         {
             this.con = con;
-            auto = new AutoSizeForm();
+            
             InitializeComponent();
         }
 

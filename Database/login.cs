@@ -9,12 +9,11 @@ namespace Database
     {
         public MySqlConnection Con { get; set; }
         user_page page;
-
-        AutoSizeForm auto;
+        AutoSizeForm auto=new AutoSizeForm();
         public login()
         {
             InitializeComponent();
-            auto = new AutoSizeForm();
+            
         }
 
         //界面加载连接数据库
@@ -22,7 +21,7 @@ namespace Database
         {
             auto.controlInitial(this);
 
-            string s = "server=localhost;user=root;password=17113255qkl;" +
+            string s = "server=localhost;user=yourusername;password=yourpassword;" +
                 "database=course_select_system;sslMode=none;";
             Con = new MySqlConnection(s);
             try

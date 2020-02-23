@@ -18,13 +18,13 @@ namespace Database
         //主页面
         user_page page;
         //控件缩放类
-        AutoSizeForm auto;
+        AutoSizeForm auto = new AutoSizeForm();
         
 
         public info(MySqlConnection con)
         {
             this.con = con;
-            auto = new AutoSizeForm();
+           
             InitializeComponent();
         }
 

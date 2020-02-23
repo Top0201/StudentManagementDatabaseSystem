@@ -93,6 +93,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(980, 660);
             this.panel1.TabIndex = 0;
+            this.panel1.SizeChanged += new System.EventHandler(this.resize);
             // 
             // select_all
             // 
@@ -136,28 +137,28 @@
             // 
             this.s_cname.Location = new System.Drawing.Point(122, 160);
             this.s_cname.Name = "s_cname";
-            this.s_cname.Size = new System.Drawing.Size(129, 31);
+            this.s_cname.Size = new System.Drawing.Size(129, 39);
             this.s_cname.TabIndex = 8;
             // 
             // s_cid
             // 
             this.s_cid.Location = new System.Drawing.Point(122, 116);
             this.s_cid.Name = "s_cid";
-            this.s_cid.Size = new System.Drawing.Size(129, 31);
+            this.s_cid.Size = new System.Drawing.Size(129, 39);
             this.s_cid.TabIndex = 7;
             // 
             // s_sname
             // 
             this.s_sname.Location = new System.Drawing.Point(122, 75);
             this.s_sname.Name = "s_sname";
-            this.s_sname.Size = new System.Drawing.Size(129, 31);
+            this.s_sname.Size = new System.Drawing.Size(129, 39);
             this.s_sname.TabIndex = 6;
             // 
             // s_sid
             // 
             this.s_sid.Location = new System.Drawing.Point(122, 32);
             this.s_sid.Name = "s_sid";
-            this.s_sid.Size = new System.Drawing.Size(129, 31);
+            this.s_sid.Size = new System.Drawing.Size(129, 39);
             this.s_sid.TabIndex = 5;
             // 
             // label10
@@ -165,7 +166,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(17, 163);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 21);
+            this.label10.Size = new System.Drawing.Size(96, 28);
             this.label10.TabIndex = 4;
             this.label10.Text = "课程名";
             // 
@@ -174,7 +175,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(17, 119);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 21);
+            this.label9.Size = new System.Drawing.Size(96, 28);
             this.label9.TabIndex = 3;
             this.label9.Text = "课程号";
             // 
@@ -183,7 +184,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(16, 74);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 21);
+            this.label8.Size = new System.Drawing.Size(96, 28);
             this.label8.TabIndex = 2;
             this.label8.Text = "姓  名";
             // 
@@ -192,7 +193,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(14, 36);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 21);
+            this.label7.Size = new System.Drawing.Size(96, 28);
             this.label7.TabIndex = 1;
             this.label7.Text = "学  号";
             // 
@@ -201,7 +202,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(-4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 21);
+            this.label6.Size = new System.Drawing.Size(124, 28);
             this.label6.TabIndex = 0;
             this.label6.Text = "信息查找";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -222,10 +223,10 @@
             // 
             this.cou_average_mark.AutoSize = true;
             this.cou_average_mark.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cou_average_mark.Font = new System.Drawing.Font("宋体", 9F);
+            this.cou_average_mark.Font = new System.Drawing.Font("SimSun", 9F);
             this.cou_average_mark.Location = new System.Drawing.Point(12, 152);
             this.cou_average_mark.Name = "cou_average_mark";
-            this.cou_average_mark.Size = new System.Drawing.Size(193, 22);
+            this.cou_average_mark.Size = new System.Drawing.Size(255, 28);
             this.cou_average_mark.TabIndex = 15;
             this.cou_average_mark.TabStop = true;
             this.cou_average_mark.Text = "每个课程的平均成绩";
@@ -236,10 +237,10 @@
             // 
             this.cou_mark.AutoSize = true;
             this.cou_mark.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cou_mark.Font = new System.Drawing.Font("宋体", 9F);
+            this.cou_mark.Font = new System.Drawing.Font("SimSun", 9F);
             this.cou_mark.Location = new System.Drawing.Point(12, 113);
             this.cou_mark.Name = "cou_mark";
-            this.cou_mark.Size = new System.Drawing.Size(193, 22);
+            this.cou_mark.Size = new System.Drawing.Size(255, 28);
             this.cou_mark.TabIndex = 15;
             this.cou_mark.TabStop = true;
             this.cou_mark.Text = "每个课程的成绩分布";
@@ -250,10 +251,10 @@
             // 
             this.c_average_mark.AutoSize = true;
             this.c_average_mark.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.c_average_mark.Font = new System.Drawing.Font("宋体", 9F);
+            this.c_average_mark.Font = new System.Drawing.Font("SimSun", 9F);
             this.c_average_mark.Location = new System.Drawing.Point(12, 75);
             this.c_average_mark.Name = "c_average_mark";
-            this.c_average_mark.Size = new System.Drawing.Size(193, 22);
+            this.c_average_mark.Size = new System.Drawing.Size(255, 28);
             this.c_average_mark.TabIndex = 15;
             this.c_average_mark.TabStop = true;
             this.c_average_mark.Text = "每个班级的平均成绩";
@@ -264,10 +265,10 @@
             // 
             this.average_mark.AutoSize = true;
             this.average_mark.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.average_mark.Font = new System.Drawing.Font("宋体", 9F);
+            this.average_mark.Font = new System.Drawing.Font("SimSun", 9F);
             this.average_mark.Location = new System.Drawing.Point(12, 36);
             this.average_mark.Name = "average_mark";
-            this.average_mark.Size = new System.Drawing.Size(193, 22);
+            this.average_mark.Size = new System.Drawing.Size(255, 28);
             this.average_mark.TabIndex = 15;
             this.average_mark.TabStop = true;
             this.average_mark.Text = "每个学生的平均成绩";
@@ -279,7 +280,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(-1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 21);
+            this.label5.Size = new System.Drawing.Size(124, 28);
             this.label5.TabIndex = 15;
             this.label5.Text = "信息统计";
             // 
@@ -329,30 +330,30 @@
             // 
             // choose_year
             // 
-            this.choose_year.Location = new System.Drawing.Point(785, 202);
+            this.choose_year.Location = new System.Drawing.Point(812, 199);
             this.choose_year.Name = "choose_year";
-            this.choose_year.Size = new System.Drawing.Size(152, 31);
+            this.choose_year.Size = new System.Drawing.Size(152, 39);
             this.choose_year.TabIndex = 9;
             // 
             // mark
             // 
-            this.mark.Location = new System.Drawing.Point(785, 144);
+            this.mark.Location = new System.Drawing.Point(812, 144);
             this.mark.Name = "mark";
-            this.mark.Size = new System.Drawing.Size(152, 31);
+            this.mark.Size = new System.Drawing.Size(152, 39);
             this.mark.TabIndex = 8;
             // 
             // cid
             // 
-            this.cid.Location = new System.Drawing.Point(785, 89);
+            this.cid.Location = new System.Drawing.Point(812, 89);
             this.cid.Name = "cid";
-            this.cid.Size = new System.Drawing.Size(152, 31);
+            this.cid.Size = new System.Drawing.Size(152, 39);
             this.cid.TabIndex = 7;
             // 
             // sid
             // 
-            this.sid.Location = new System.Drawing.Point(785, 34);
+            this.sid.Location = new System.Drawing.Point(812, 34);
             this.sid.Name = "sid";
-            this.sid.Size = new System.Drawing.Size(152, 31);
+            this.sid.Size = new System.Drawing.Size(152, 39);
             this.sid.TabIndex = 6;
             // 
             // label4
@@ -360,7 +361,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(682, 202);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 21);
+            this.label4.Size = new System.Drawing.Size(124, 28);
             this.label4.TabIndex = 5;
             this.label4.Text = "选择年份";
             // 
@@ -369,7 +370,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(691, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 21);
+            this.label3.Size = new System.Drawing.Size(96, 28);
             this.label3.TabIndex = 4;
             this.label3.Text = "分  数";
             // 
@@ -378,7 +379,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(691, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 21);
+            this.label2.Size = new System.Drawing.Size(96, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "课程号";
             // 
@@ -387,9 +388,10 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(691, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 21);
+            this.label1.Size = new System.Drawing.Size(96, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "学  号";
+            this.label1.SizeChanged += new System.EventHandler(this.resize);
             // 
             // dataGridView1
             // 
@@ -398,6 +400,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(15, 12);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.Size = new System.Drawing.Size(647, 394);
             this.dataGridView1.TabIndex = 1;
@@ -409,18 +412,18 @@
             // 
             // info
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(978, 659);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("宋体", 10.5F);
+            this.Font = new System.Drawing.Font("SimSun", 10.5F);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "info";
             this.Text = "选课成绩管理";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.info_FormClosed);
             this.Load += new System.EventHandler(this.info_Load);
-            this.ResizeEnd += new System.EventHandler(this.resize);
+            this.SizeChanged += new System.EventHandler(this.resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);

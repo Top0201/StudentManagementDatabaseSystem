@@ -18,21 +18,14 @@ namespace Database
         student_info s_page;
         course_info c_page;
         info i_page;
-        AutoSizeForm auto;
+        AutoSizeForm auto=new AutoSizeForm();
         public user_page(MySqlConnection con)
         {
             this.con = con;
-            auto = new AutoSizeForm();
             InitializeComponent();
         }
 
-        //关闭窗口事件
-        private void windowClose(object sender, EventArgs e)
-        {
-
-        }
-
-
+        //点击check按钮，进入相应界面
         private void students_CheckedChanged(object sender, EventArgs e)
         {
             s_page = new student_info(con);

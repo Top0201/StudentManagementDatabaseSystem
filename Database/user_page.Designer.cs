@@ -44,17 +44,20 @@
             this.panel1.Controls.Add(this.course);
             this.panel1.Controls.Add(this.students);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 451);
+            this.panel1.Size = new System.Drawing.Size(1068, 601);
             this.panel1.TabIndex = 0;
+            this.panel1.SizeChanged += new System.EventHandler(this.user_page_ResizeEnd);
             // 
             // exit
             // 
             this.exit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.exit.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.exit.Location = new System.Drawing.Point(646, 389);
+            this.exit.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.exit.Location = new System.Drawing.Point(861, 519);
+            this.exit.Margin = new System.Windows.Forms.Padding(4);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(90, 35);
+            this.exit.Size = new System.Drawing.Size(120, 47);
             this.exit.TabIndex = 3;
             this.exit.Text = "退出";
             this.exit.UseVisualStyleBackColor = false;
@@ -63,10 +66,11 @@
             // info
             // 
             this.info.AutoSize = true;
-            this.info.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.info.Location = new System.Drawing.Point(291, 262);
+            this.info.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.info.Location = new System.Drawing.Point(388, 349);
+            this.info.Margin = new System.Windows.Forms.Padding(4);
             this.info.Name = "info";
-            this.info.Size = new System.Drawing.Size(179, 28);
+            this.info.Size = new System.Drawing.Size(238, 37);
             this.info.TabIndex = 2;
             this.info.Text = "选课成绩管理";
             this.info.UseVisualStyleBackColor = true;
@@ -75,10 +79,11 @@
             // course
             // 
             this.course.AutoSize = true;
-            this.course.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.course.Location = new System.Drawing.Point(291, 180);
+            this.course.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.course.Location = new System.Drawing.Point(388, 240);
+            this.course.Margin = new System.Windows.Forms.Padding(4);
             this.course.Name = "course";
-            this.course.Size = new System.Drawing.Size(179, 28);
+            this.course.Size = new System.Drawing.Size(238, 37);
             this.course.TabIndex = 1;
             this.course.Text = "课程信息管理";
             this.course.UseVisualStyleBackColor = true;
@@ -87,10 +92,11 @@
             // students
             // 
             this.students.AutoSize = true;
-            this.students.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.students.Location = new System.Drawing.Point(291, 98);
+            this.students.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.students.Location = new System.Drawing.Point(388, 131);
+            this.students.Margin = new System.Windows.Forms.Padding(4);
             this.students.Name = "students";
-            this.students.Size = new System.Drawing.Size(179, 28);
+            this.students.Size = new System.Drawing.Size(238, 37);
             this.students.TabIndex = 0;
             this.students.Text = "学生信息管理";
             this.students.UseVisualStyleBackColor = true;
@@ -98,15 +104,16 @@
             // 
             // user_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 600);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "user_page";
             this.Text = "学生选课管理系统";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.user_page_FormClosed);
             this.Load += new System.EventHandler(this.user_page_Load);
-            this.ResizeEnd += new System.EventHandler(this.user_page_ResizeEnd);
+            this.SizeChanged += new System.EventHandler(this.user_page_ResizeEnd);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
